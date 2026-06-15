@@ -1,45 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+<title>Download App</title>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+<style>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="powerful_investor">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    background:
+    linear-gradient(135deg,#050816,#1b2b59);
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    font-family: Arial, sans-serif;
+}
 
-  <title>powerful_investor</title>
-  <link rel="manifest" href="manifest.json">
+
+.card {
+
+    width: 85%;
+    max-width: 400px;
+
+    padding: 40px 25px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.5);
+
+}
+
+
+.logo {
+
+    font-size:70px;
+
+}
+
+
+h1 {
+
+    color:white;
+
+    font-size:32px;
+
+}
+
+
+p {
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+
+.download {
+
+
+    display:block;
+
+    margin-top:30px;
+
+
+    padding:18px;
+
+
+    border-radius:25px;
+
+
+    background:
+    linear-gradient(
+    45deg,
+    #00e676,
+    #00bfa5
+    );
+
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,255,150,0.4);
+
+}
+
+
+.download:active {
+
+    transform:scale(0.95);
+
+}
+
+
+.small {
+
+    margin-top:20px;
+
+    color:#aaa;
+
+    font-size:13px;
+
+}
+
+
+</style>
+
 </head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-  <h1>Download My App</h1>
 
-<a href="https://github.com/cpllearning894-ui/Basic_trading_download/releases/download/v1.0/app-release.apk">
-  <button>
-    Download App
-  </button>
+
+<body>
+
+
+<div class="card">
+
+
+<div class="logo">
+📈
+</div>
+
+
+<h1>
+Powerful Investor
+</h1>
+
+
+<p>
+Learn trading with interactive lessons.
+Download the Android app now.
+</p>
+
+
+
+<a class="download"
+href="https://github.com/cpllearning894-ui/Basic_trading_download/releases/download/v1.0/app-release.apk">
+
+⬇ Download App
+
 </a>
+
+
+
+<div class="small">
+Version 1.0 • Android APK
+</div>
+
+
+</div>
+
+
 </body>
+
 </html>
